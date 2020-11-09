@@ -1,8 +1,8 @@
 ## Travail réalisé par Elio Vendittozzi ECV B3
 
 
-[* Page](https://github.com/Famoos/TestDev9Novembre/blob/master/index.html "index.html")
+[* Page](https://famoos.github.io/TestDev9Novembre/ "page")
 
-[* Page index](https://github.com/Famoos/TestDev9Novembre/blob/master/index.html "index.html")
+[* Code HTML](https://github.com/Famoos/TestDev9Novembre/blob/master/index.html "index.html")
 
-[* Style css](https://github.com/Famoos/TestDev9Novembre/blob/master/css/style.css "style.css")
+[* Code CSS](https://github.com/Famoos/TestDev9Novembre/blob/master/css/style.css "style.css")
