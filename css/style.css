@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap');
+/*css reset style*/
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    background: #ccc url(https://i.imgur.com/HWu44Bv.png) no-repeat fixed center center / cover;
+}
+
+body{
+	font: 1.6rem sans-serif;
+	margin: 0;
+}
+
+h1,h2,p,figure,ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-weight: lighter; /*bolder*/
+}
+
+h1,h2{
+    font-family: 'Zhi Mang Xing', cursive;
+}
+
+h1{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+details, summary, a{
+    outline: 0;
+    text-decoration: none;
+}
+
+a{
+    color: #222;
+}
+
+/* scroll bars */
+*{
+    /* For FF and non-webkit browsers */
+    scrollbar-width: thin;
+    scrollbar-color: #000 #FFF;
+}
+
+*::-webkit-scrollbar {
+    width: .2rem;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #222;
+    outline: .1rem solid #333;
+}
+
+/* theme */
+:root{
+    --color-focus: #c90f0f;
+    --color-link: #333;
+    --color-body: #fafafa;
+    --title-color: #00BFFF;
+}
+
+header, main{
+    max-width: 80rem;
+    border: .1rem solid transparent;
+    margin: 0 auto;
+    background-color: transparent;
+    background-color: rgba(255,255,255,0.8);
+    
+}
+
+header{
+    height: 10rem;
+    margin:2rem auto 0;
+    padding: .5rem;
+}
+
+header h1::before{
+    content: '\002605';
+    color: #df0c0c;
+    vertical-align: .3rem;
+    margin-right:.1rem;
+}
+
+main{
+    padding: .5rem; 
+}
+
+section h2, nav h2{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: var(--title-color);
+    line-height: 4.5rem;
+    padding: .5rem;
+    text-transform: capitalize;
+    box-shadow: 0 .3rem 0 #ccc;
+    text-shadow: .1rem .1rem 0 #ccc;
+    color: #fafafa;
+}
+
+nav ol li{
+    text-transform: capitalize;
+    line-height: 2.5rem;
+}
+
+section img{
+    display: block;
+    width: 100%;
+}
+
+main footer{
+    text-align: center;
+    text-transform: capitalize;
+    padding: .5rem;
+}
+
+section p{
+    padding-top: 2rem;
+    line-height: 2.6rem;
+    text-align: justify;
+}
+
+section div{
+    padding-bottom: .5rem;
+}
+
+/* couleur de l'historique */
+section #Hist, nav #Hist{
+    transition-duration: 0.8s;
+}
+
+section #Hist:target, section #argent:target, section #year:target{
+    background-color: var(--color-focus);
+}
+
+@media screen and (min-width: 360px) and (max-width: 1200px){
+    header, main{
+        width: auto;
+    }
+
+    nav ol{
+        list-style-type: none;
+        padding:0;
+        margin:0;
+    }
+
+    nav ol li{
+        background-color: #222;
+        margin-bottom: .1rem;
+        padding-left: .5rem;
+        line-height: 4.5rem;
+        
+    }
+
+    nav ol li a{
+        color: #fff;
+        display: block;
+    }
+}
